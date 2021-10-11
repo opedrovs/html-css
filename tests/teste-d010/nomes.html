@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Curiosidades de Tecnologia</h1>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+    </header>
+    
+    <nav>
+        <a href="android.html" target="_self" rel="prev">Home</a>
+        <a href="calculadora.html" target="_self" rel="next">Calculadora</a>
+        <a href="#" target="_self" rel="next">Nomes</a>
+        <a href="#">Fale Conosco</a>
+    </nav>
+
+    <main>
+        <article>
+            <h1>Nomes</h1>
+            <p>Clique no botão abaixo</p>
+            <input type="button" value="Começar" class="contas" onclick="clicar()">
+
+            <p class="res"></p>
+        </article>
+    </main>
+
+    <script>
+        function clicar() {
+            let nome = window.prompt('Qual é o seu nome? ')
+            let res = window.document.querySelector('p.res')
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! O seu nome tem ${nome.length} letras.</p>`
+            res.innerHTML += `<p>Seu nome em maiúsculas, <strong>${nome.toUpperCase()}</strong></p>`
+            res.innerHTML += `<p>Seu nome em minúsculas, <strong>${nome.toLowerCase()}</strong></p>`
+        }
+    </script>
+</body>
+</html>
