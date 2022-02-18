@@ -15,6 +15,6 @@ function descobrir() {
         let nasc = Number(anonasc.value)
         let idade = ano - nasc
 
-        res.innerHTML = `<h2>Você tem ${idade} anos.</h2>`
+        res.innerHTML = `<h2>Quem nasceu em ${nasc} vai completar ${idade} anos em ${ano}</h2>`
     }
 }
