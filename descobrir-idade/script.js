@@ -1,8 +1,9 @@
+let anonasc = window.document.getElementById('anonasc')
+let res = window.document.getElementsByClassName('res')[0]
+
 function descobrir() {
     let data = new Date()
     let ano = data.getFullYear()
-    let anonasc = window.document.getElementById('anonasc')
-    let res = window.document.getElementsByClassName('res')[0]
 
     if (anonasc.value > ano) {
         // ERRO: Ano nascimento maior que o ano atual

@@ -39,7 +39,7 @@ section label {
     padding-bottom: 6px;
 }
 
-section input#anonasc {
+input#anonasc {
     margin-bottom: 60px;
     color: white;
     background-color: #232335;
@@ -47,6 +47,12 @@ section input#anonasc {
     padding: 5px 3px;
     border-radius: 3px;
     width: 200px;
+}
+
+input#anonasc:focus {
+    box-shadow: 0 0 0 0;
+    border: 1px solid rgb(75, 75, 75);
+    outline: 0;
 }
 
 .botao {
