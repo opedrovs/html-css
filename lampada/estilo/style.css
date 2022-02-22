@@ -1,8 +1,0 @@
-@charset "UTF-8";
-
-main, header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, Helvetica, Verdana, sans-serif;
-}
